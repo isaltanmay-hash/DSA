@@ -3,9 +3,9 @@ class Solution {
         int newRow=matrix[0].length;
         int newColumn=matrix.length;
         int[][] arr=new int[newRow][newColumn];
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[0].length;j++){
-                arr[j][i]=matrix[i][j];
+        for(int i=0;i<newRow;i++){
+            for(int j=0;j<newColumn;j++){
+                arr[i][j]=matrix[j][i];
             }
         }
         return arr;
