@@ -3,9 +3,11 @@ class Solution {
         int sumOdd=n*n;
         int sumEven=n*(n+1);
 
-        for(int i=Math.min(sumOdd,sumEven);i>0;i--){
-            if(sumOdd%i==0 && sumEven%i==0)return i;
-        }
-        return 1;
+        //using recursion
+        return hcf(sumOdd,sumEven);
+    }
+    public static int hcf(int a,int b){
+        if(a==0)return b;
+        return hcf(b%a,a);
     }
 }
