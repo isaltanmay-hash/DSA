@@ -1,3 +1,4 @@
+//better O(nlogn)
 class Solution {
     public int findDuplicate(int[] nums) {
         Arrays.sort(nums);
